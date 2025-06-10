@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prozentrechnung</title>
+  
+</head>
+<body style="background-color: #B9D1EA; margin-top: 8em; ">
+       
+    <style> 
+        .Aufg {
+        display: flex;flex-direction:row;justify-content:center;align-items:center;}
+        .Aufgabe { font-size: 0.8em;  justify-content:space-betweeen;font-family: Verdana,Sans-serif;margin:1em; }
+        button {background-color:white;font-size:0.8em; font-weight: bold; font-family: Verdana, Sans-serif;}
+        input {background-color:yellow; }
+    </style>
+
+<!--//Aufgabe 1-->
+
+          <div class="Aufg">  
+
+            <button  id="Aufgabe1"  onclick="Aufgabe1()" >29</button>
+            <p class = "Aufgabe" style="font-weight:bold;">In einer Obstkiste sind 12 % der Früchte verdorben. Der Verkäufer muss deswegen 39,6 kg wegwerfen.<br>
+    Wie viel kg kann er noch verkaufen?  Ergebnis: <input type="text" id="Eintrag1" maxlength="5" size="2" disabled="true"></input> kg</br></p>
+               
+            <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe29.pdf');" style="visibility:hidden; ">Lösung</button>
+          
+          
+            
+               <script>
+                        function Aufgabe1() { 
+                        document.getElementById("Aufgabe1").disabled= true;
+                        document.getElementById("Eintrag1").disabled = false;
+                        document.getElementById("Eintrag1").focus(); 
+                        }
+                        Eintrag1.addEventListener('keydown', (event) => {
+                          if (event.key === 'Enter' && Eintrag1.value=="290,4") {alert("Richtig"); document.getElementById("Eintrag1").disabled="true"; document.getElementById("Loesung1").style.visibility="visible";   
+                             
+                           }
+                          else if (event.key === 'Enter' && Eintrag1.value!=="290,4" && Eintrag1.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag1").value="290,4";            
+                          document.getElementById("Loesung1").style.visibility="visible";
+                          document.getElementById("Eintrag1").disabled="true"; }       
+                          else if (event.key === 'Enter' && Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}
+                        }) 
+                      </script>
+
+                      </div>
+
+                
+                <!--//Aufgabe 2-->     
+                        
+     <div class="Aufg">
+
+      <button id ="Aufgabe2" onclick="Aufgabe2()" >30</button>
+      <p class = "Aufgabe" style="font-weight:bold;">In Deutschland gibt es 136 000 km² Wald, das sind 29 % der Gesamtfläche.<br>
+                            Wie groß ist die Gesamtfläche Deutschlands? </br> </p>
+      <button id ="Loesung2" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe30.pdf');" style="visibility:hidden; ">Lösung</button>
+
+      <script>
+          function Aufgabe2() { 
+          document.getElementById("Aufgabe2").disabled="true"; document.getElementById("Loesung2").style.visibility="visible";
+                                    }
+        
+      </script>  
+      
+      </div>
+
+      <div class = "Aufg">
+      
+        <!--//Aufgabe 3--> 
+  
+        <button id="Aufgabe3" onclick="Aufgabe3()" >31</button>
+                  
+                  <p class = "Aufgabe" style="font-weight:bold;">Deutschland hat 1963 für 52,3 Milliarden DM Waren importiert. Das sind 5,6 % mehr als 1962.<br>
+                    Für wie viel DM hat Deutschland 1962 Waren importiert?  Ergebnis: <input type="text" id="Eintrag3" maxlength="5" size="3" disabled= "true"></input> DM<br>Tragen Sie das Ergebnis auf 2 Stellen nach dem Komma gerundet ein.</br></p>
+                      <button id="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozenz/Proz_Aufgabe31.pdf');" style="visibility:hidden;">Lösung</button>
+                        
+            <script>
+  
+                function Aufgabe3() { 
+                document.getElementById("Aufgabe3").disabled= true;
+                document.getElementById("Eintrag3").disabled = false;
+                document.getElementById("Eintrag3").focus(); 
+                }
+                Eintrag3.addEventListener('keydown', (event) => {
+                  if (event.key === 'Enter' && Eintrag3.value=="49,53") {alert("Richtig"); document.getElementById("Eintrag3").disabled="true"; document.getElementById("Loesung3").style.visibility="visible";   
+                     
+                   }
+                  else if (event.key === 'Enter' && Eintrag3.value!=="49,53" && Eintrag3.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag3").value="49,53";            
+                  document.getElementById("Loesung3").style.visibility="visible";
+                  document.getElementById("Eintrag3").disabled="true"; }       
+                  else if (event.key === 'Enter' && Eintrag3.value=="") {alert("Bitte eine Eingabe machen")}
+                }) 
+            </script>
+            
+      </div>
+
+           <!--//Aufgabe 4-->
+      
+      <div class="Aufg">
+
+        <button id ="Aufgabe4" onclick="Aufgabe4()" >32</button>
+        <p class = "Aufgabe" style="font-weight:bold;">Beim Kauf eines Grundstücks muss man 7 % Grunderwerbssteuer an das Finanzamt bezahlen.<br>
+                    Wie viel Grunderwerbssteuer muss ein Käufer bezahlen, wenn das Grundstück 13 410 € kostet? </br></p>
+        <button id ="Loesung4" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe32.pdf');" style="visibility:hidden; ">Lösung</button>
+  
+        <script>
+            function Aufgabe4() { 
+            document.getElementById("Aufgabe4").disabled="true"; document.getElementById("Loesung4").style.visibility="visible";}
+                    
+        </script>  
+   
+      </div>
+
+       <!--//Aufgabe 5--> 
+
+      <div class="Aufg">
+
+        <button id="Aufgabe5" onclick="Aufgabe5()" >33</button>
+                  
+                  <p class = "Aufgabe" style="font-weight:bold;">Ein Bauer versichert seine Ernte gegen Hagelschäden. Den Wert der Ernte gibt er mit<br> 
+                    12 400 € an. Für diesen Betrag muss man 40 € Versicherungsbeitrag bezahlen.<br>
+                    Wie viel Prozent sind das? &nbsp &nbsp  Ergebnis: <input type="text" id="Eintrag5" maxlength="4" size="2" disabled="true"></input> %<br>Tragen Sie das Ergebnis auf 2 Stellen nach dem Komma gerundet ein.</br></p>
+                     <button id="Loesung5" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe33.pdf');" style="visibility:hidden;">Lösung</button>
+                        
+            <script>
+  
+                function Aufgabe5() { 
+                document.getElementById("Aufgabe5").disabled= true;
+                document.getElementById("Eintrag5").disabled = false;
+                document.getElementById("Eintrag5").focus(); 
+                }
+                Eintrag5.addEventListener('keydown', (event) => {
+                  if (event.key === 'Enter' && Eintrag5.value=="8,32") {alert("Richtig"); document.getElementById("Eintrag5").disabled="true"; document.getElementById("Loesung5").style.visibility="visible";   
+                     
+                   }
+                  else if (event.key === 'Enter' && Eintrag5.value!=="8,32" && Eintrag5.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag5").value="8,32";            
+                  document.getElementById("Loesung5").style.visibility="visible";
+                  document.getElementById("Eintrag5").disabled="true"; }       
+                  else if (event.key === 'Enter' && Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}
+                }) 
+            </script>
+        </div>
+
+        <div class="Aufg">
+      
+          <!--//Aufgabe 6-->       
+                            
+          <button id ="Aufgabe6" onclick="Aufgabe6()" >34</button>
+            <p class = "Aufgabe" style="font-weight:bold;">Ein Immobilienmakler verlangt vom Käufer einer Eigentumswohnung eine<br> 
+                Provision von 5700 €, das sind 3 % des Kaufpreises. Wie viel kostet die Wohnung?</br></p>
+          <button id ="Loesung6" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe34.pdf');" style="visibility:hidden;">Lösung</button>
+        
+               <script>
+    
+                    function Aufgabe6() { 
+                    document.getElementById("Aufgabe6").disabled="true"; document.getElementById("Loesung6").style.visibility="visible";
+                                            }
+               </script> 
+          </div>
+
+          <!--//Aufgabe 7--> 
+
+        <div class="Aufg">
+
+          <button id ="Aufgabe7" onclick="Aufgabe7()" >35</button>
+          <p class = "Aufgabe" style="font-weight:bold;">Die Milch in einer 200 g Dose hat einen Fettgehalt von 10%.Wie viel g Wasser muss man hinzugeben,<br>
+                um einen Fettgehalt von 4 % zu erhalten?    Ergebnis: <input type="text" id="Eintrag7" maxlength="3" size="1" disabled="true"></input> g</br></p>
+          <button id ="Loesung7" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe35.pdf');" style="visibility:hidden;">Lösung</button>
+  
+              <script>
+  
+                  function Aufgabe7() {
+                  document.getElementById("Aufgabe7").disabled= true;
+                  document.getElementById("Eintrag7").disabled = false;
+                  document.getElementById("Eintrag7").focus(); 
+                  }
+                  Eintrag7.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' && Eintrag7.value=="300") {alert("Richtig"); document.getElementById("Eintrag7").disabled="true"; document.getElementById("Loesung7").style.visibility="visible";   
+                       
+                     }
+                    else if (event.key === 'Enter' && Eintrag7.value!=="300" && Eintrag7.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag7").value="300";            
+                    document.getElementById("Loesung7").style.visibility="visible";
+                    document.getElementById("Eintrag7").disabled="true"; }       
+                    else if (event.key === 'Enter' && Eintrag7.value=="") {alert("Bitte eine Eingabe machen")}
+                  }) 
+                </script>
+                
+              </div>
+
+              <!--//Aufgabe 8-->   
+             
+        <div class="Aufg">
+                                
+          <button id ="Aufgabe8" onclick="Aufgabe8()" >36</button>
+            <p class = "Aufgabe" style="font-weight:bold;">Ein Angestellter verdient im Monat 1700 € brutto. Netto verbleiben ihm 1160 €.<br>
+                a) Wie hoch sind seine Abzüge in Prozent?<br>b) Wie viel müsste er bei gleichem Prozentsatz brutto verdienen, damit ihm netto 1700 € ausbezahlt werden?</br></p>   
+          <button id ="Loesung8" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe36.pdf');" style="visibility:hidden;">Lösung</button>
+        
+               <script>
+    
+                    function Aufgabe8() { 
+                    document.getElementById("Aufgabe8").disabled="true"; document.getElementById("Loesung8").style.visibility="visible";
+                                            }
+               </script>
+    
+          </div>
+
+      <!--//Aufgabe 9--> 
+
+      <div class="Aufg">
+
+        <button id ="Aufgabe9" onclick="Aufgabe9()" >37</button>
+        <p class = "Aufgabe" style="font-weight:bold;">Ein Mixgetränk besteht aus 3 Teilen Orangensaft, 2 Teilen Ananassaft, 2 Teilen Mineralwasser,<br> 
+    1 Tei 40%iger Gin und 1 Teil 80%iger Rum.<br>
+    Wie viel Prozent Alkohol hat das fertige Getränk? Ergebnis: <input type="text" id="Eintrag9" maxlength="5" size="3" disabled="true"></input> %<br>Tragen Sie das Ergebnis auf 2 Stellen nach dem Komma gerundet ein.</br></p>
+      
+        <button id ="Loesung9" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe37.pdf');" style="visibility:hidden;">Lösung</button>
+
+            <script>
+
+                function Aufgabe9() {
+                document.getElementById("Aufgabe9").disabled= true;
+                document.getElementById("Eintrag9").disabled = false;
+                document.getElementById("Eintrag9").focus(); 
+                }
+                Eintrag9.addEventListener('keydown', (event) => {
+                  if (event.key === 'Enter' && Eintrag9.value=="13,33") {alert("Richtig"); document.getElementById("Eintrag9").disabled="true"; document.getElementById("Loesung9").style.visibility="visible";   
+                     
+                   }
+                  else if (event.key === 'Enter' && Eintrag9.value!=="13,33" && Eintrag9.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag9").value="13,33";            
+                  document.getElementById("Loesung9").style.visibility="visible";
+                  document.getElementById("Eintrag9").disabled="true"; }       
+                  else if (event.key === 'Enter' && Eintrag9.value=="") {alert("Bitte eine Eingabe machen")}
+                }) 
+              </script>
+              
+            </div>
+
+           <div class="Aufg">
+            <button type="button" id ="mehr" onclick="window.open('Prozent4.html'); window.close('Prozent3.html');">mehr...</button>
+            <button type="button" id ="zurück" onclick="window.open('index.html'); window.close('Prozent3.html');">zurück</button>
+          </div>
+
+          <script>
+
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          
+          </script>
+
+
+  </body>
+             
+        

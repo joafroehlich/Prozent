@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prozentrechnung</title>
+  
+</head>
+<body style="background-color: #B9D1EA; margin-top: 8em; ">
+       
+    <style> 
+        .Aufg {
+        display: flex;flex-direction:row;justify-content:center;align-items:center;}
+        .Aufgabe { font-size: 0.8em;  justify-content:space-betweeen;font-family: Verdana,Sans-serif;margin:1em; }
+        button {background-color:white;font-size:0.8em; font-weight: bold; font-family: Verdana, Sans-serif;}
+        input {background-color:yellow; }
+    </style>
+    
+	          <!--//Aufgabe 1-->
+
+          <div class="Aufg">  
+
+            <button  id="Aufgabe1"  onclick="Aufgabe1()" >19</button>
+            <p class = "Aufgabe" style="font-weight:bold;">Ein Hersteller stellt Radiogeräte zum Preis von jeweils 220 € her.<br>
+              Im Fachgeschäft werden sie für jeweils 400,40 € angeboten.<br>
+              Um wie viel Prozent hat sich ein Radio verteuert?  Ergebnis: <input type="text" id="Eintrag1" maxlength="2" size="1" disabled="true"></input> %</br></span></p>
+                
+            <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe19.pdf');" style="visibility:hidden; ">Lösung</button>
+          
+          
+            
+               <script>
+                        function Aufgabe1() { 
+                        document.getElementById("Aufgabe1").disabled= true;
+                        document.getElementById("Eintrag1").disabled = false;
+                        document.getElementById("Eintrag1").focus(); 
+                        }
+                        Eintrag1.addEventListener('keydown', (event) => {
+                          if (event.key === 'Enter' && Eintrag1.value=="82") {alert("Richtig"); document.getElementById("Eintrag1").disabled="true"; document.getElementById("Loesung1").style.visibility="visible";   
+                             
+                           }
+                          else if (event.key === 'Enter' && Eintrag1.value!=="82" && Eintrag1.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag1").value="82";            
+                          document.getElementById("Loesung1").style.visibility="visible";
+                          document.getElementById("Eintrag1").disabled="true"; }       
+                          else if (event.key === 'Enter' && Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}
+                        }) 
+                      </script>
+
+                      </div>
+
+                
+                <!--//Aufgabe 2-->     
+                        
+     <div class="Aufg">
+
+      <button id ="Aufgabe2" onclick="Aufgabe2()" >20</button>
+      <p class = "Aufgabe" style="font-weight:bold;">In einer Klasse sind 16 Mädchen. Der Rest, 60%, sind Jungen.  Wie viel Schüler sind in der Klasse? </p>
+      <button id ="Loesung2" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe20.pdf');" style="visibility:hidden; ">Lösung</button>
+
+      <script>
+          function Aufgabe2() { 
+          document.getElementById("Aufgabe2").disabled="true"; document.getElementById("Loesung2").style.visibility="visible";
+                                    }
+        
+      </script>  
+      
+      </div>
+
+      <div class = "Aufg">
+      
+        <!--//Aufgabe 3--> 
+  
+        <button id="Aufgabe3" onclick="Aufgabe3()" >21</button>
+                  
+                  <p class = "Aufgabe" style="font-weight:bold;">Die Reparatur eines Autos kostet ohne 19 % Mehrwertsteuer 455 €.<br>
+                    Wie viel muss der Kunde bezahlen, wenn ihm die Werkstatt ein Skonto von 2 % bei Barzahlung gewährt? Ergebnis: <input type="text" id="Eintrag3" maxlength="6" size="3" disabled= "true"></input> €<br></p>
+                     <button id="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozenz/Proz_Aufgabe21.pdf');" style="visibility:hidden;">Lösung</button>
+                        
+            <script>
+  
+                function Aufgabe3() { 
+                document.getElementById("Aufgabe3").disabled= true;
+                document.getElementById("Eintrag3").disabled = false;
+                document.getElementById("Eintrag3").focus(); 
+                }
+                Eintrag3.addEventListener('keydown', (event) => {
+                  if (event.key === 'Enter' && Eintrag3.value=="530,62") {alert("Richtig"); document.getElementById("Eintrag3").disabled="true"; document.getElementById("Loesung3").style.visibility="visible";   
+                     
+                   }
+                  else if (event.key === 'Enter' && Eintrag3.value!=="530,62" && Eintrag3.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag3").value="530,62";            
+                  document.getElementById("Loesung3").style.visibility="visible";
+                  document.getElementById("Eintrag3").disabled="true"; }       
+                  else if (event.key === 'Enter' && Eintrag3.value=="") {alert("Bitte eine Eingabe machen")}
+                }) 
+            </script>
+            
+      </div>
+
+           <!--//Aufgabe 4-->
+      
+      <div class="Aufg">
+
+        <button id ="Aufgabe4" onclick="Aufgabe4()" >22</button>
+        <p class = "Aufgabe" style="font-weight:bold;">Nach langjähriger Beobachtung hat man festgestellt, dass Jungen<br>
+          mit 12 Jahren 84 % ihrer Endgröße erreicht haben. Ein 12-jähriger ist 158 cm groß.<br>
+          Wie groß wird er als Erwachsener werden? </br></p>
+        <button id ="Loesung4" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe22.pdf');" style="visibility:hidden; ">Lösung</button>
+  
+        <script>
+            function Aufgabe4() { 
+            document.getElementById("Aufgabe4").disabled="true"; document.getElementById("Loesung4").style.visibility="visible";}
+                    
+        </script>  
+   
+      </div>
+
+       <!--//Aufgabe 5--> 
+
+      <div class="Aufg">
+
+        <button id="Aufgabe5" onclick="Aufgabe5()" >23</button>
+                  
+                  <p class = "Aufgabe" style="font-weight:bold;">Eine Milchsorte enthält 4,2 % Fett.<br>
+                    Wie viel g Fett sind in 35 l Milch enthalten, wenn 1 l Milch 1030 g wiegt?  Ergebnis: <input type="text" id="Eintrag5" maxlength="6" size="3" disabled="true"></input> g</br></p>
+                     <button id="Loesung5" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe23.pdf');" style="visibility:hidden;">Lösung</button>
+                        
+            <script>
+  
+                function Aufgabe5() { 
+                document.getElementById("Aufgabe5").disabled= true;
+                document.getElementById("Eintrag5").disabled = false;
+                document.getElementById("Eintrag5").focus(); 
+                }
+                Eintrag5.addEventListener('keydown', (event) => {
+                  if (event.key === 'Enter' && Eintrag5.value=="1514,1") {alert("Richtig"); document.getElementById("Eintrag5").disabled="true"; document.getElementById("Loesung5").style.visibility="visible";   
+                     
+                   }
+                  else if (event.key === 'Enter' && Eintrag5.value!=="1514,1" && Eintrag5.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag5").value="1514.1";            
+                  document.getElementById("Loesung5").style.visibility="visible";
+                  document.getElementById("Eintrag5").disabled="true"; }       
+                  else if (event.key === 'Enter' && Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}
+                }) 
+            </script>
+        </div>
+
+        <div class="Aufg">
+      
+          <!--//Aufgabe 6-->       
+                            
+          <button id ="Aufgabe6" onclick="Aufgabe6()" >24</button>
+            <p class = "Aufgabe" style="font-weight:bold;">Im Sommerschlussverkauf sind alle Artikel 15 % billiger. Ein Kleid kostet jetzt 68,85 €.<br>
+              Wie teuer war es vorher? </br></span></p>
+          <button id ="Loesung6" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe24.pdf');" style="visibility:hidden;">Lösung</button>
+        
+               <script>
+    
+                    function Aufgabe6() { 
+                    document.getElementById("Aufgabe6").disabled="true"; document.getElementById("Loesung6").style.visibility="visible";
+                                            }
+               </script> 
+          </div>
+
+          <!--//Aufgabe 7--> 
+
+        <div class="Aufg">
+
+          <button id ="Aufgabe7" onclick="Aufgabe7()" >25</button>
+          <p class = "Aufgabe" style="font-weight:bold;">Bei Barzahlung bekommt man häufig einen Preisnachlass (Skonto). Was muss ein Kunde bezahlen,<br> 
+            wenn er auf einen Rechnungsbetrag von 886 € ein Skonto von 3 % bekommt?  Ergebnis: <input type="text" id="Eintrag7" maxlength="6" size="3" disabled="true"></input> m³</br></p>
+          <button id ="Loesung7" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe25.pdf');" style="visibility:hidden;">Lösung</button>
+  
+              <script>
+  
+                  function Aufgabe7() {
+                  document.getElementById("Aufgabe7").disabled= true;
+                  document.getElementById("Eintrag7").disabled = false;
+                  document.getElementById("Eintrag7").focus(); 
+                  }
+                  Eintrag7.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' && Eintrag7.value=="859,42") {alert("Richtig"); document.getElementById("Eintrag7").disabled="true"; document.getElementById("Loesung7").style.visibility="visible";   
+                       
+                     }
+                    else if (event.key === 'Enter' && Eintrag7.value!=="859,42" && Eintrag7.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag7").value="859,42";            
+                    document.getElementById("Loesung7").style.visibility="visible";
+                    document.getElementById("Eintrag7").disabled="true"; }       
+                    else if (event.key === 'Enter' && Eintrag7.value=="") {alert("Bitte eine Eingabe machen")}
+                  }) 
+                </script>
+                
+              </div>
+
+              <!--//Aufgabe 8-->   
+             
+        <div class="Aufg">
+                                
+          <button id ="Aufgabe8" onclick="Aufgabe8()" >26</button>
+            <p class = "Aufgabe" style="font-weight:bold;">Der Preis für einen Liter Milch ist von 0,88 € auf 1 € erhöht worden. Wie hoch ist die Erhöhung in Prozent?</p>               
+          <button id ="Loesung8" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe26.pdf');" style="visibility:hidden;">Lösung</button>
+        
+               <script>
+    
+                    function Aufgabe8() { 
+                    document.getElementById("Aufgabe8").disabled="true"; document.getElementById("Loesung8").style.visibility="visible";
+                                            }
+               </script>
+    
+          </div>
+
+      <!--//Aufgabe 9--> 
+
+      <div class="Aufg">
+
+        <button id ="Aufgabe9" onclick="Aufgabe9()" >27</button>
+        <p class = "Aufgabe" style="font-weight:bold;">Der Bau eines Hauses hat sich um 3,5 %, das sind 6300 €, verteuert.<br> 
+          Wie viel sollte das Haus ursprünglich kosten?  Ergebnis: <input type="text" id="Eintrag9" maxlength="6" size="3" disabled="true"></input> m³</br></p>
+      
+        <button id ="Loesung9" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe27.pdf');" style="visibility:hidden;">Lösung</button>
+
+            <script>
+
+                function Aufgabe9() {
+                document.getElementById("Aufgabe9").disabled= true;
+                document.getElementById("Eintrag9").disabled = false;
+                document.getElementById("Eintrag9").focus(); 
+                }
+                Eintrag9.addEventListener('keydown', (event) => {
+                  if (event.key === 'Enter' && Eintrag9.value=="180000") {alert("Richtig"); document.getElementById("Eintrag9").disabled="true"; document.getElementById("Loesung9").style.visibility="visible";   
+                     
+                   }
+                  else if (event.key === 'Enter' && Eintrag9.value!=="180000" && Eintrag9.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag9").value="180000";            
+                  document.getElementById("Loesung9").style.visibility="visible";
+                  document.getElementById("Eintrag9").disabled="true"; }       
+                  else if (event.key === 'Enter' && Eintrag9.value=="") {alert("Bitte eine Eingabe machen")}
+                }) 
+              </script>
+              
+            </div>
+
+            <!--//Aufgabe 10-->   
+             
+        <div class="Aufg">
+                                
+          <button id ="Aufgabe10" onclick="Aufgabe10()" >28</button>
+            <p class = "Aufgabe" style="font-weight:bold;">Ein Straßenbahnfahrschein für eine einfache Fahrt kostet 2 €. Ein Sammelfahrschein für 6 Fahrten kostet 10 €.<br>
+              Wie viel Prozent kann man beim Kauf einer Sechserkarte sparen?</br></p>          
+          <button id ="Loesung10" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe28.pdf');" style="visibility:hidden;">Lösung</button>
+        
+               <script>
+    
+                    function Aufgabe10() { 
+                    document.getElementById("Aufgabe10").disabled="true"; document.getElementById("Loesung10").style.visibility="visible";
+                                            }
+               </script>
+    
+          </div>
+
+          <div class="Aufg">
+            <button type="button" id ="mehr" onclick="window.open('Prozent3.html'); window.close('Prozent2.html');">mehr...</button>
+            <button type="button" id ="zurück" onclick="window.open('index.html'); window.close('Prozent2.html');">zurück</button>
+          </div>
+
+          <script>
+
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          
+          </script>
+
+
+  </body>
+             

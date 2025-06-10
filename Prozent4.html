@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prozentrechnung</title>
+  
+</head>
+<body style="background-color: #B9D1EA; margin-top: 8em; ">
+       
+    <style> 
+        .Aufg {
+        display: flex;flex-direction:row;justify-content:center;align-items:center;}
+        .Aufgabe { font-size: 0.8em;  justify-content:space-betweeen;font-family: Verdana,Sans-serif;margin:1em; }
+        button {background-color:white;font-size:0.8em; font-weight: bold; font-family: Verdana, Sans-serif;}
+        input {background-color:yellow; }
+    </style>
+
+              
+                <!--//Aufgabe 1-->     
+                        
+     <div class="Aufg">
+
+      <button id ="Aufgabe1" onclick="Aufgabe1()" >38</button>
+      <p class = "Aufgabe" style="font-weight:bold;">Ein Händler gibt beim Kauf einer Maschine 15% Rabatt auf den Listenpreis.<br>
+                Der Kunde muss nach Abzug von 3% Skonto noch 1319,20 € bezahlen.<br>
+                Wie hoch war der Listenpreis?</br> </p>
+      <button id ="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe38.pdf');" style="visibility:hidden; ">Lösung</button>
+
+      <script>
+          function Aufgabe1() { 
+          document.getElementById("Aufgabe1").disabled="true"; document.getElementById("Loesung1").style.visibility="visible";
+                                    }
+        
+      </script>  
+      
+      </div>
+
+      <div class = "Aufg">
+      
+        <!--//Aufgabe 2--> 
+  
+        <button id="Aufgabe2" onclick="Aufgabe2()" >39</button>
+                  
+                  <p class = "Aufgabe" style="font-weight:bold;">In einer Zeitung wirbt eine Firma für ein Produkt. Die Zeitung hat 90 000 Bezieher.<br>
+    Man schätzt, dass 50% der Bezieher die Anzeige lesen und 4% davon das Produkt kaufen.<br>        
+    a) Mit wie viel Käufern kann die Firma rechnen?  Ergebnis: <input type="text" id="Eintrag2" maxlength="4" size="2" disabled="true"></input> <br>                                                                          
+    b) Wie hoch ist der Gesamtgewinn, wenn die Firma 85 € Gewinn pro Produkt macht?</br></p>                  <button id="Loesung2" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozenz/Proz_Aufgabe39.pdf');" style="visibility:hidden;">Lösung</button>
+                        
+            <script>
+  
+                function Aufgabe2() { 
+                document.getElementById("Aufgabe2").disabled= true;
+                document.getElementById("Eintrag2").disabled = false;
+                document.getElementById("Eintrag2").focus(); 
+                }
+                Eintrag2.addEventListener('keydown', (event) => {
+                  if (event.key === 'Enter' && Eintrag2.value=="1800") {alert("Richtig"); document.getElementById("Eintrag2").disabled="true"; document.getElementById("Loesung2").style.visibility="visible";   
+                     
+                   }
+                  else if (event.key === 'Enter' && Eintrag2.value!=="1800" && Eintrag2.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag2").value="1800";            
+                  document.getElementById("Loesung2").style.visibility="visible";
+                  document.getElementById("Eintrag2").disabled="true"; }       
+                  else if (event.key === 'Enter' && Eintrag2.value=="") {alert("Bitte eine Eingabe machen")}
+                }) 
+            </script>
+            
+      </div>
+
+           <!--//Aufgabe 3-->
+      
+      <div class="Aufg">
+
+        <button id ="Aufgabe3" onclick="Aufgabe3()" >40</button>
+        <p class = "Aufgabe" style="font-weight:bold;">Ein Händler gibt 10% Rabatt auf den Listenpreis, ein anderer<br>
+                7% Rabatt und zusätzlich 3% Skonto.<br>
+                Wie viel Prozent muss der Kunde beim günstigeren Händler bezahlen?</br> </p>
+        <button id ="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe40.pdf');" style="visibility:hidden; ">Lösung</button>
+  
+        <script>
+            function Aufgabe3() { 
+            document.getElementById("Aufgabe3").disabled="true"; document.getElementById("Loesung3").style.visibility="visible";}
+                    
+        </script>  
+   
+      </div>
+
+       <!--//Aufgabe 4--> 
+
+      <div class="Aufg">
+
+        <button id="Aufgabe5" onclick="Aufgabe4()" >41</button>
+                  
+                  <p class = "Aufgabe" style="font-weight:bold;">Der größte je gemessene Mensch war 2,75 m, der kleinste 0,40 m.<br>
+    a) Wie viel Prozent betrug die Länge des Großen von der Länge des Kleinen? &nbsp &nbsp   Ergebnis: <input type="text" id="Eintrag4" maxlength="5" size="2" disabled="true"></input><br>   
+    b) Wie viel Prozent betrug die Länge des Kleinen von der Länge des Großen?</br></p>
+                 <button id="Loesung4" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe41.pdf');" style="visibility:hidden;">Lösung</button>
+                        
+            <script>
+  
+                function Aufgabe4() { 
+                document.getElementById("Aufgabe4").disabled= true;
+                document.getElementById("Eintrag4").disabled = false;
+                document.getElementById("Eintrag4").focus(); 
+                }
+                Eintrag4.addEventListener('keydown', (event) => {
+                  if (event.key === 'Enter' && Eintrag4.value=="687,5") {alert("Richtig"); document.getElementById("Eintrag4").disabled="true"; document.getElementById("Loesung4").style.visibility="visible";   
+                     
+                   }
+                  else if (event.key === 'Enter' && Eintrag4.value!=="687,5" && Eintrag4.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag4").value="687,5";            
+                  document.getElementById("Loesung4").style.visibility="visible";
+                  document.getElementById("Eintrag4").disabled="true"; }       
+                  else if (event.key === 'Enter' && Eintrag4.value=="") {alert("Bitte eine Eingabe machen")}
+                }) 
+            </script>
+        </div>
+
+        <div class="Aufg">
+      
+          <!--//Aufgabe 5-->       
+                            
+          <button id ="Aufgabe5" onclick="Aufgabe6()" >42</button>
+            <p class = "Aufgabe" style="font-weight:bold;">Ein Bauer versichert seine Ernte mit 50 000 € gegen Hagelschaden.<br>
+                a) Wie hoch ist seine Jahresprämie bei einem Prozentsatz von 7,5 %?<br>                    
+                b) Seine Feuerversicherung verlangt 0,4 % der Versicherungssumme als Prämie.<br> 
+                Die Prämie beträgt 120 €. Wie hoch ist die Versicherungssumme?<br>                          
+                c) Für  seine Hausratversicherung über 32 000 € muss er 80 € bezahlen.<br> 
+                Wie hoch ist der Prozentsatz?</br> </p>
+          <button id ="Loesung5" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe42.pdf');" style="visibility:hidden;">Lösung</button>
+        
+               <script>
+    
+                    function Aufgabe5() { 
+                    document.getElementById("Aufgabe5").disabled="true"; document.getElementById("Loesung5").style.visibility="visible";
+                                            }
+               </script> 
+          </div>
+
+          <!--//Aufgabe 6--> 
+
+        <div class="Aufg">
+
+          <button id ="Aufgabe6" onclick="Aufgabe6()" >43</button>
+          <p class = "Aufgabe" style="font-weight:bold;">Für eine Kfz-Haftpflichtversicherung muss der Versicherungsnehmer noch 40 % von <br>
+             ursprünglich 726,40 € bezahlen. Nach einem Schadensfall muss er 55 % bezahlen.<br>
+             Bis zu welcher Schadenshöhe lohnt es sich, den Schaden selbst zu bezahlen, wenn er<br>
+             1 Jahr 55 %, 2 Jahre 50 % und 3 Jahre 45 % bezahlen muss, um wieder in den<br>
+             ursprünglichen Tarif zu kommen?  Ergebnis: <input type="text" id="Eintrag6" maxlength="6" size="2" disabled="true"> €</input></br></p>
+          <button id ="Loesung6" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe43.pdf');" style="visibility:hidden;">Lösung</button>
+  
+              <script>
+  
+                  function Aufgabe6() {
+                  document.getElementById("Aufgabe6").disabled= true;
+                  document.getElementById("Eintrag6").disabled = false;
+                  document.getElementById("Eintrag6").focus(); 
+                  }
+                  Eintrag6.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' && Eintrag6.value=="363,20") {alert("Richtig"); document.getElementById("Eintrag6").disabled="true"; document.getElementById("Loesung6").style.visibility="visible";   
+                       
+                     }
+                    else if (event.key === 'Enter' && Eintrag6.value!=="363,20" && Eintrag6.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag6").value="363,20";            
+                    document.getElementById("Loesung6").style.visibility="visible";
+                    document.getElementById("Eintrag6").disabled="true"; }       
+                    else if (event.key === 'Enter' && Eintrag6.value=="") {alert("Bitte eine Eingabe machen")}
+                  }) 
+                </script>
+                
+              </div>
+
+          <div class="Aufg">
+             <button type="button" id ="zurück" onclick="window.open('index.html'); window.close('Prozent4.html');">zurück</button>
+          </div>
+
+          <script>
+
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          
+          </script>
+
+
+  </body>
+             
+        

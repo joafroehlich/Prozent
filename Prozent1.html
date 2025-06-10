@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dreisatz</title>
+  
+</head>
+<body style="background-color: #B9D1EA; margin-top: 8em; ">
+       
+    <style> 
+        .Aufg {
+        display: flex;flex-direction:row;justify-content:center;align-items:center;}
+        .Aufgabe { font-size: 0.8em;  justify-content:space-betweeen;font-family: Verdana,Sans-serif;margin:1em; }
+        button {background-color:white;font-size:0.8em; font-weight: bold; font-family: Verdana, Sans-serif;}
+        input {background-color:yellow; }
+    </style>
+    
+	          <!--//Aufgabe 1-->
+
+          <div class="Aufg">  
+
+            <button  id="Aufgabe1"  onclick="Aufgabe1()" >11</button>
+            <p class = "Aufgabe" style="font-weight:bold;">In einem Wald stehen 3500 m³ Holz. Jährlich kommen 2,5 % dazu.<br>
+              Wie viel m³ Holz können geschlagen werden, wenn der Bestand erhalten bleiben soll?  Ergebnis: <input type="text" id="Eintrag1" maxlength="4" size="2" disabled="true"></input> m³</span></p>
+                             
+            <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe11.pdf');" style="visibility:hidden; ">Lösung</button>
+          
+          
+            
+               <script>
+                        function Aufgabe1() { 
+                        document.getElementById("Aufgabe1").disabled= true;
+                        document.getElementById("Eintrag1").disabled = false;
+                        document.getElementById("Eintrag1").focus(); 
+                        }
+                        Eintrag1.addEventListener('keydown', (event) => {
+                          if (event.key === 'Enter' && Eintrag1.value=="87,5") {alert("Richtig"); document.getElementById("Eintrag1").disabled="true"; document.getElementById("Loesung1").style.visibility="visible";   
+                             
+                           }
+                          else if (event.key === 'Enter' && Eintrag1.value!=="87,5" && Eintrag1.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag1").value="87,5";            
+                          document.getElementById("Loesung1").style.visibility="visible";
+                          document.getElementById("Eintrag1").disabled="true"; }       
+                          else if (event.key === 'Enter' && Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}
+                        }) 
+                      </script>
+
+                      </div>
+
+                
+                <!--//Aufgabe 2-->     
+                        
+     <div class="Aufg">
+
+      <button id ="Aufgabe2" onclick="Aufgabe2()" >12</button>
+      <p class = "Aufgabe" style="font-weight:bold;">Für einen Kühlschrank zahlt der Käufer eine Anzahlung von 315 €. Das sind 35 % des Kaufpreises.   
+        <BR>Wie teuer ist der Kühlschrank?</br></p>
+      <button id ="Loesung2" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe12.pdf');" style="visibility:hidden; ">Lösung</button>
+
+      <script>
+          function Aufgabe2() { 
+          document.getElementById("Aufgabe2").disabled="true"; document.getElementById("Loesung2").style.visibility="visible";
+                                    }
+        
+      </script>  
+      
+      </div>
+
+      <div class = "Aufg">
+      
+        <!--//Aufgabe 3--> 
+  
+        <button id="Aufgabe3" onclick="Aufgabe3()" >13</button>
+                  
+                  <p class = "Aufgabe" style="font-weight:bold;">Ein  Erwachsener hat eine Blutmenge von 7 % seines Körpergewichts.<br>
+                    a) Wie viel kg  Blut hat ein Erwachsener mit 75 kg Körpergewicht?  Ergebnis: <input type="text" id="Eintrag3" maxlength="4" size="2" disabled= "true"></input> kg<br>                       
+                    b) Ein Autofahrer wird bestraft, wenn sein Blutalkoholgehalt 0,5 ‰ beträgt.<br> 
+                    Welcher Alkoholmenge in g entspricht dies bei einem Körpergewicht von 75 kg?</br></p>
+                     <button id="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe13.pdf');" style="visibility:hidden;">Lösung</button>
+                        
+            <script>
+  
+                function Aufgabe3() { 
+                document.getElementById("Aufgabe3").disabled= true;
+                document.getElementById("Eintrag3").disabled = false;
+                document.getElementById("Eintrag3").focus(); 
+                }
+                Eintrag3.addEventListener('keydown', (event) => {
+                  if (event.key === 'Enter' && Eintrag3.value=="5,25") {alert("Richtig"); document.getElementById("Eintrag3").disabled="true"; document.getElementById("Loesung3").style.visibility="visible";   
+                     
+                   }
+                  else if (event.key === 'Enter' && Eintrag3.value!=="5,25" && Eintrag3.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag3").value="5,25";            
+                  document.getElementById("Loesung3").style.visibility="visible";
+                  document.getElementById("Eintrag3").disabled="true"; }       
+                  else if (event.key === 'Enter' && Eintrag3.value=="") {alert("Bitte eine Eingabe machen")}
+                }) 
+            </script>
+            
+      </div>
+
+           <!--//Aufgabe 4-->
+      
+      <div class="Aufg">
+
+        <button id ="Aufgabe4" onclick="Aufgabe4()" >14</button>
+        <p class = "Aufgabe" style="font-weight:bold;">An einem Unternehmen sind Herr Schmitz mit 35 000 € und Herr Meier mit<br> 
+          52 500 € beteiligt. Das Unternehmen macht einen Gewinn von 10 000 €.<br> 
+          Wie viel von dem Gewinn erhält Herr Schmitz? </br></p>
+        <button id ="Loesung4" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe14.pdf');" style="visibility:hidden; ">Lösung</button>
+  
+        <script>
+            function Aufgabe4() { 
+            document.getElementById("Aufgabe4").disabled="true"; document.getElementById("Loesung4").style.visibility="visible";}
+                    
+        </script>  
+   
+      </div>
+
+       <!--//Aufgabe 5--> 
+
+      <div class="Aufg">
+
+        <button id="Aufgabe5" onclick="Aufgabe5()" >15</button>
+                  
+                  <p class = "Aufgabe" style="font-weight:bold;">Die Miete für ein Zimmer wird von 156 € auf 195 € erhöht. Wie hoch ist die Erhöhung in Prozent?  Ergebnis: <input type="text" id="Eintrag5" maxlength="2" size="1" disabled="true"></input> %<br>Tragen Sie das Ergebnis als gerundete ganze Zahl ein.</br></p></pre>
+                     <button id="Loesung5" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe15.pdf');" style="visibility:hidden;">Lösung</button>
+                        
+            <script>
+  
+                function Aufgabe5() { 
+                document.getElementById("Aufgabe5").disabled= true;
+                document.getElementById("Eintrag5").disabled = false;
+                document.getElementById("Eintrag5").focus(); 
+                }
+                Eintrag5.addEventListener('keydown', (event) => {
+                  if (event.key === 'Enter' && Eintrag5.value=="25") {alert("Richtig"); document.getElementById("Eintrag5").disabled="true"; document.getElementById("Loesung5").style.visibility="visible";   
+                     
+                   }
+                  else if (event.key === 'Enter' && Eintrag5.value!=="25" && Eintrag5.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag5").value="25";            
+                  document.getElementById("Loesung5").style.visibility="visible";
+                  document.getElementById("Eintrag5").disabled="true"; }       
+                  else if (event.key === 'Enter' && Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}
+                }) 
+            </script>
+        </div>
+
+        <div class="Aufg">
+      
+          <!--//Aufgabe 6-->       
+                            
+          <button id ="Aufgabe6" onclick="Aufgabe6()" >16</button>
+            <p class = "Aufgabe" style="font-weight:bold;">Nach einer Mieterhöhung von 7,5 % muss der Mieter 71,25 € mehr bezahlen. Wie hoch war die alte Miete?</p>
+          <button id ="Loesung6" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe16.pdf');" style="visibility:hidden;">Lösung</button>
+        
+               <script>
+    
+                    function Aufgabe6() { 
+                    document.getElementById("Aufgabe6").disabled="true"; document.getElementById("Loesung6").style.visibility="visible";
+                                            }
+               </script> 
+          </div>
+
+          <!--//Aufgabe 7--> 
+
+        <div class="Aufg">
+
+          <button id ="Aufgabe7" onclick="Aufgabe7()" >17</button>
+          <p class = "Aufgabe" style="font-weight:bold;">Luft besteht zu 21 % aus Sauerstoff. Wie viel m³ Sauerstoff befinden sich in einem Raum<br> 
+            mit einer Länge von 15 m, einer Breite von 10 m und einer Höhe von 3 m?   Ergebnis: <input type="text" id="Eintrag7" maxlength="4" size="2" disabled="true"></input> m³</br></p>
+          <button id ="Loesung7" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe17.pdf');" style="visibility:hidden;">Lösung</button>
+  
+              <script>
+  
+                  function Aufgabe7() {
+                  document.getElementById("Aufgabe7").disabled= true;
+                  document.getElementById("Eintrag7").disabled = false;
+                  document.getElementById("Eintrag7").focus(); 
+                  }
+                  Eintrag7.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' && Eintrag7.value=="94,5") {alert("Richtig"); document.getElementById("Eintrag7").disabled="true"; document.getElementById("Loesung7").style.visibility="visible";   
+                       
+                     }
+                    else if (event.key === 'Enter' && Eintrag7.value!=="94,5" && Eintrag7.value!=="") {alert("Der Eintrag ist falsch. Die richtige Lösung wird eingetragen."); document.getElementById("Eintrag7").value="94,5";            
+                    document.getElementById("Loesung7").style.visibility="visible";
+                    document.getElementById("Eintrag7").disabled="true"; }       
+                    else if (event.key === 'Enter' && Eintrag7.value=="") {alert("Bitte eine Eingabe machen")}
+                  }) 
+                </script>
+                
+              </div>
+
+              <!--//Aufgabe 8-->   
+             
+        <div class="Aufg">
+                                
+          <button id ="Aufgabe8" onclick="Aufgabe8()" >18</button>
+           <pre><p class = "Aufgabe" style="font-weight:bold;">Ein Theater verlangt folgende Preise:
+              Erwachsene      Schüler 
+---------------------------------------------------- 
+Reihe   1 - 10                18€            14€    
+Reihe 11 - 20                12€              9€   
+Reihe 21 - 30                  8€         5,50€   
+Empore                           5€          2,50€   
+Wie viel Prozent zahlt ein Schüler,<br>der in Reihe 11 - 20 sitzt,<br>gegenüber einem Erwachsenen weniger?</br></p>   </pre>
+          <button id ="Loesung8" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe18.pdf');" style="visibility:hidden;">Lösung</button>
+        
+               <script>
+    
+                    function Aufgabe8() { 
+                    document.getElementById("Aufgabe8").disabled="true"; document.getElementById("Loesung8").style.visibility="visible";
+                                            }
+               </script>
+    
+          </div>
+
+          <div class="Aufg">
+            <button type="button" id ="mehr" onclick="window.open('Prozent2.html'); window.close('Prozent1.html');">mehr...</button>
+            <button type="button" id ="zurück" onclick="window.open('index.html'); window.close('Prozent1.html');" >zurück</button>
+          </div>
+
+      <script>
+        document.body.addEventListener("input", function(inputEvent) {
+        const eingabeFeld = inputEvent.target;
+        if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+        eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+          }
+        })
+      </script>
+
+  </body>
+             
