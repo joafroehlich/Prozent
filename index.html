@@ -33,7 +33,7 @@
                   Welcher Betrag verbleibt dem Verein? </strong><br> 
     Ihr Ergebnis: <input type="text" id="Eintrag1" maxlength="7" size="3" style= background-color:yellow > €</input> &nbsp; 
       <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button>&nbsp;
-  <button id="Loesung1" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe1.pdf');" style="visibility:hidden">Lösung</button></p>
+  
   
                      <script>
                         function Aufgabe1() { 
@@ -41,8 +41,8 @@
                           if (Eintrag1.value=="2235,20") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;
                           }
                            
-                          else if (Eintrag1.value!=="2235,20" && Eintrag1.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag1").value="2235,20";            
-                          document.getElementById("Loesung1").style.visibility="visible";document.getElementById("Pruef1").disabled= true;}
+                          else if (Eintrag1.value!=="2235,20" && Eintrag1.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag1").value="2235,20"; window.open('Prozent_Aufgabe1.html');           
+                          document.getElementById("Pruef1").disabled= true;}
                                
                           else if (Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -53,7 +53,7 @@
   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 2</p>
   <p class="Aufgabe" style="font-weight:bold">Auf einer Rechnung steht: Schweinebraten 18,40 €, Brot 2,00 €, Getränk 2,40 €.<br> 
                       Wie viel muss der Gast bezahlen, wenn er 10% Trinkgeld geben will? <br>
-  <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe2.pdf');" >Lösung</button></p>
+  <button  onclick="window.open('Prozent_Aufgabe2.html')" >Lösung</button></p>
                  
             
      <!--//Aufgabe 3--> 
@@ -63,7 +63,7 @@
 &nbsp; &nbsp; </strong> <br>
 Ihr Ergebnis: <input type="text" id="Eintrag3" maxlength="2" size="1" style= background-color:yellow > %</input> &nbsp; 
       <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button>&nbsp;
-  <button id="Loesung3" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe3.pdf');" style="visibility:hidden">Lösung</button></p>
+  
   
                      <script>c
                         function Aufgabe3() { 
@@ -71,8 +71,8 @@ Ihr Ergebnis: <input type="text" id="Eintrag3" maxlength="2" size="1" style= bac
                           if (Eintrag3.value=="15") {alert("Richtig"); document.getElementById("Pruef3").disabled= true;
                           }  
                            
-                          else if (Eintrag3.value!=="15" && Eintrag3.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag3").value="15";            
-                          document.getElementById("Loesung3").style.visibility="visible";document.getElementById("Pruef3").disabled= true;}
+                          else if (Eintrag3.value!=="15" && Eintrag3.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag3").value="15"; window.open('Prozent_Aufgabe3.html')           
+                          document.getElementById("Pruef3").disabled= true;}
                                
                           else if (Eintrag3.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -82,7 +82,7 @@ Ihr Ergebnis: <input type="text" id="Eintrag3" maxlength="2" size="1" style= bac
 
   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 4</p>
   <p class="Aufgabe" style="font-weight:bold">In einer Klasse sind 8 Mädchen, das sind 25% der Schüler. <br>Wie viele Schüler sind insgesamt in der Klasse?<br> 
-  <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe4.pdf');" >Lösung</button></p>
+  <button  onclick="window.open('Prozent_Aufgabe4.html')" >Lösung</button></p>
   
           <!--//Aufgabe 5--> 
 
@@ -91,16 +91,15 @@ Ihr Ergebnis: <input type="text" id="Eintrag3" maxlength="2" size="1" style= bac
                   Wie viel muss der Kunde bezahlen? </strong><br> 
     Ihr Ergebnis: <input type="text" id="Eintrag5" maxlength="6" size="2" style= background-color:yellow ></input> €
      <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button>
-  <button id="Loesung5" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe5.pdf');" style="visibility:hidden">Lösung</button></p>
-     
+       
      <script>
                         function Aufgabe5() { 
                                                 
                           if (Eintrag5.value=="127,42") {alert("Richtig"); document.getElementById("Pruef5").disabled= true;
                           }  
                            
-                          else if (Eintrag5.value!=="127,42" && Eintrag5.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag5").value="127,42";            
-                          document.getElementById("Loesung5").style.visibility="visible";document.getElementById("Pruef5").disabled= true;}
+                          else if (Eintrag5.value!=="127,42" && Eintrag5.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag5").value="127,42";window.open('Prozent_Aufgabe5.html')            
+                          document.getElementById("Pruef5").disabled= true;}
                                
                           else if (Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -112,7 +111,7 @@ Ihr Ergebnis: <input type="text" id="Eintrag3" maxlength="2" size="1" style= bac
   <p class="Aufgabe" style="font-weight:bold">Nach einer Klassenarbeit gibt es folgende Ergebnisse:<br>2 Schüler eine 1, 
           8 Schüler eine 2, 10 Schüler eine 3, 8 Schüler eine 4 und 4 Schüler eine 5.<br>
           Wie viel Prozent haben mindestens eine 4 erreicht?<br>
-    <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe6.pdf');" >Lösung</button></p>
+    <button  onclick="window.open('Prozent_Aufgabe6.html')" >Lösung</button></p>
       
    <!--//Aufgabe 7--> 
 
@@ -120,16 +119,15 @@ Ihr Ergebnis: <input type="text" id="Eintrag3" maxlength="2" size="1" style= bac
   <p class = "Aufgabe" ><strong>Ein Korb Äpfel wiegt 10 kg. Das Korbgewicht beträgt 5% des Gesamtgewichts. <BR>Wie viel kg wiegen die Äpfel? </strong><br>
 Ihr Ergebnis:  <input type="text" id="Eintrag7" maxlength="3" size="1" style= background-color:yellow > kg</input> &nbsp; 
     <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button>&nbsp;
-    <button id="Loesung7" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe7.pdf');" style="visibility:hidden">Lösung</button></p>
-
+    
                     <script>
                         function Aufgabe7() { 
                                                 
                           if (Eintrag7.value=="9,5") {alert("Richtig"); document.getElementById("Pruef7").disabled= true;
                           }  
                            
-                          else if (Eintrag7.value!=="9,5" && Eintrag7.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag7").value="9,5";            
-                          document.getElementById("Loesung7").style.visibility="visible";document.getElementById("Pruef7").disabled= true;}
+                          else if (Eintrag7.value!=="9,5" && Eintrag7.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag7").value="9,5"; window.open('Prozent_Aufgabe7.html')           
+                          document.getElementById("Pruef7").disabled= true;}
                                
                           else if (Eintrag7.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -140,7 +138,7 @@ Ihr Ergebnis:  <input type="text" id="Eintrag7" maxlength="3" size="1" style= ba
       <p class="Aufgabe" style="font-weight:bold" >Aufgabe 8</p>
       <p class="Aufgabe" style="font-weight:bold">Bei der Produktion von Schrauben entsteht üblicherweise 1,5 % Ausschuss.<br>
                   Wie viel Schrauben wurden produziert, wenn 147 unbrauchbar waren? <br> 
-      <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe8.pdf');" >Lösung</button></p>
+      <button  onclick="window.open('Prozent_Aufgabe8.html')" >Lösung</button></p>
 
  <!--//Aufgabe 9--> 
 
@@ -149,26 +147,26 @@ Ihr Ergebnis:  <input type="text" id="Eintrag7" maxlength="3" size="1" style= ba
 </strong><br>
 Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="2" size="1" style= background-color:yellow > %</input>
     <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button>
-  <button id="Loesung9" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe9.pdf');" style="visibility:hidden">Lösung</button></p>
-
+  
 <script>
                         function Aufgabe9() { 
                                                 
                           if (Eintrag9.value=="95") {alert("Richtig"); document.getElementById("Pruef9").disabled= true;
                           }  
                            
-                          else if (Eintrag9.value!=="95" && Eintrag9.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag9").value="95";            
-                          document.getElementById("Loesung9").style.visibility="visible";document.getElementById("Pruef9").disabled= true;}
+                          else if (Eintrag9.value!=="95" && Eintrag9.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag9").value="95";window.open('Prozent_Aufgabe9.html')            
+                          document.getElementById("Pruef9").disabled= true;}
                                
                           else if (Eintrag9.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
+
         <!--//Aufgabe 10-->   
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 10</p>
         <p class="Aufgabe" style="font-weight:bold">12,5 % einer Geldsumme entsprechen 11 €. <br>Wie hoch ist die Gesamtsumme? 
  &nbsp;   
-        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe10.pdf');" >Lösung</button></p>
+        <button  onclick="window.open('Prozent_Aufgabe10.html')" >Lösung</button></p>
 
         <!--//Aufgabe 11-->
 
@@ -177,15 +175,14 @@ Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="2" size="1" style= bac
               Wie viel m³ Holz können geschlagen werden, wenn der Bestand erhalten bleiben soll?    </strong><br>
     Ihr Ergebnis: <input type="text" id="Eintrag11" maxlength="4" size="1" style= background-color:yellow > €</input>
     <button id="Pruef11" onclick="Aufgabe11()">Prüfen</button>
-  <button id="Loesung11" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe11.pdf');" style="visibility:hidden">Lösung</button></p>
-
+  
                     <script>
                         function Aufgabe11() { 
                                                 
                           if (Eintrag11.value=="87,5") {alert("Richtig"); document.getElementById("Pruef11").disabled= true;
                           }  
-                          else if (Eintrag11.value!=="87,5" && Eintrag11.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag11").value=" 87,5";            
-                          document.getElementById("Loesung11").style.visibility="visible";document.getElementById("Pruef11").disabled= true;}                               
+                          else if (Eintrag11.value!=="87,5" && Eintrag11.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag11").value=" 87,5"; window.open('Prozent_Aufgabe11.html')           
+                          document.getElementById("Pruef11").disabled= true;}                               
                           else if (Eintrag11.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
@@ -195,7 +192,7 @@ Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="2" size="1" style= bac
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 12</p>
         <p class="Aufgabe" style="font-weight:bold">Für einen Kühlschrank zahlt der Käufer eine Anzahlung von 315 €. Das sind 35 % des Kaufpreises.<br>   
         Wie teuer ist der Kühlschrank? 
-        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe12.pdf');" >Lösung</button></p>
+        <button  onclick="window.open('Prozent_Aufgabe12.html')" >Lösung</button></p>
                 
       <!--//Aufgabe 13-->
 
@@ -203,9 +200,8 @@ Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="2" size="1" style= bac
   <p class = "Aufgabe" ><strong>Ein  Erwachsener hat eine Blutmenge von 7 % seines Körpergewichts.<br>
                     a) Wie viel kg  Blut hat ein Erwachsener mit 75 kg Körpergewicht?  </strong>
                     Ihr Ergebnis: <input type="text" id="Eintrag13" maxlength="4" size="1" style= background-color:yellow > kg</input>
-    <button id="Pruef13" onclick="Aufgabe13()">Prüfen</button>
-  <button id="Loesung13" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe13.pdf');" style="visibility:hidden">Lösung</button><br>                       
-                    <strong>b) Ein Autofahrer wird bestraft, wenn sein Blutalkoholgehalt 0,5 ‰ beträgt. 
+    <button id="Pruef13" onclick="Aufgabe13()">Prüfen</button><br>
+                      <strong>b) Ein Autofahrer wird bestraft, wenn sein Blutalkoholgehalt 0,5 ‰ beträgt.<br> 
                     Welcher Alkoholmenge in g entspricht dies bei einem Körpergewicht von 75 kg?</strong></p>
     
 
@@ -215,8 +211,8 @@ Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="2" size="1" style= bac
                           if (Eintrag13.value=="5,25") {alert("Richtig"); document.getElementById("Pruef13").disabled= true;
                           }  
                            
-                          else if (Eintrag13.value!=="5,25" && Eintrag13.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag13").value="5,25";            
-                          document.getElementById("Loesung13").style.visibility="visible";document.getElementById("Pruef13").disabled= true;}                               
+                          else if (Eintrag13.value!=="5,25" && Eintrag13.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag13").value="5,25";window.open('Prozent_Aufgabe13.html')            
+                          document.getElementById("Pruef13").disabled= true;}                               
                           else if (Eintrag13.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script> 
@@ -227,7 +223,7 @@ Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="2" size="1" style= bac
         <p class="Aufgabe" style="font-weight:bold">An einem Unternehmen sind Herr Schmitz mit 35 000 € und Herr Meier mit 
           52 500 € beteiligt. <br>Das Unternehmen macht einen Gewinn von 10 000 €.<br> 
           Wie viel von dem Gewinn erhält Herr Schmitz? &nbsp; &nbsp;  
-        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe14.pdf');" >Lösung</button></p>
+        <button  onclick="window.open('Prozent_Aufgabe14.html')" >Lösung</button></p>
      
         <!--//Aufgabe 15-->
 
@@ -235,16 +231,15 @@ Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="2" size="1" style= bac
   <p class = "Aufgabe" ><strong>Die Miete für ein Zimmer wird von 156 € auf 195 € erhöht. <br>Wie hoch ist die Erhöhung in Prozent?<br></strong>
     Ihr Ergebnis: <input type="text" id="Eintrag15" maxlength="2" size="1" style= background-color:yellow > %</input>
     <button id="Pruef15" onclick="Aufgabe15()">Prüfen</button>
-  <button id="Loesung15" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe15.pdf');" style="visibility:hidden">Lösung</button></p>
-
+  
                     <script>
                         function Aufgabe15() { 
                                                 
                           if (Eintrag15.value=="25") {alert("Richtig"); document.getElementById("Pruef15").disabled= true;
                           }  
                            
-                          else if (Eintrag15.value!=="25" && Eintrag15.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag15").value="25";            
-                          document.getElementById("Loesung15").style.visibility="visible";document.getElementById("Pruef15").disabled= true;}                               
+                          else if (Eintrag15.value!=="25" && Eintrag15.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag15").value="25"; window.open('Prozent_Aufgabe15.html')           
+                          document.getElementById("Pruef15").disabled= true;}                               
                           else if (Eintrag15.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script> 
@@ -253,7 +248,7 @@ Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="2" size="1" style= bac
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 16</p>
         <p class="Aufgabe" style="font-weight:bold">Nach einer Mieterhöhung von 7,5 % muss der Mieter 71,25 € mehr bezahlen. <br>Wie hoch war die alte Miete?&nbsp; &nbsp;  
-        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe15.pdf');" >Lösung</button></p>
+        <button  onclick="window.open('Prozent_Aufgabe16.html')" >Lösung</button></p>
 
         <!--//Aufgabe 17-->
 
@@ -262,16 +257,15 @@ Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="2" size="1" style= bac
             mit einer Länge von 15 m, einer Breite von 10 m und einer Höhe von 3 m?</strong><br>
     Ihr Ergebnis: <input type="text" id="Eintrag17" maxlength="4" size="1" style= background-color:yellow > m³</input>
     <button id="Pruef17" onclick="Aufgabe17()">Prüfen</button>
-  <button id="Loesung17" onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe17.pdf');" style="visibility:hidden">Lösung</button></p>
-
+  
                     <script>
                         function Aufgabe17() { 
                                                 
                           if (Eintrag17.value=="94,5") {alert("Richtig"); document.getElementById("Pruef17").disabled= true;
                           }  
                            
-                          else if (Eintrag17.value!=="94,5" && Eintrag17.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag17").value="94,5";            
-                          document.getElementById("Loesung17").style.visibility="visible";document.getElementById("Pruef17").disabled= true;}                               
+                          else if (Eintrag17.value!=="94,5" && Eintrag17.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag17").value="94,5"; window.open('Prozent_Aufgabe17.html')           
+                          document.getElementById("Pruef17").disabled= true;}                               
                           else if (Eintrag17.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
@@ -286,7 +280,8 @@ Reihe   1 - 10                18€            14€
 Reihe 11 - 20                12€              9€   
 Reihe 21 - 30                  8€         5,50€   
 Empore                           5€          2,50€ </pre> 
-<p class ="Aufgabe"><strong>Wie viel Prozent zahlt ein Schüler, der in Reihe 11 - 20 sitzt, gegenüber einem Erwachsenen weniger?</strong>&nbsp; &nbsp;<button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe18.pdf');" >Lösung</button></p>  
+<p class ="Aufgabe"><strong>Wie viel Prozent zahlt ein Schüler, der in Reihe 11 - 20 sitzt, gegenüber einem Erwachsenen weniger?</strong>&nbsp; &nbsp;
+  <button  onclick="window.open('Prozent_Aufgabe18.html')" >Lösung</button></p>  
         
 <!--//Aufgabe 19-->
 
@@ -296,16 +291,15 @@ Empore                           5€          2,50€ </pre>
               Um wie viel Prozent hat sich ein Radio verteuert? </strong><br>
     Ihr Ergebnis: <input type="text" id="Eintrag19" maxlength="2" size="1" style= background-color:yellow > %</input>
     <button id="Pruef19" onclick="Aufgabe19()">Prüfen</button>
-  <button id="Loesung19" onclick="window.open('https://www.matheaufgaben-loesen.de/Dreisatz/Prozent/Proz_Aufgabe19.pdf');" style="visibility:hidden">Lösung</button></p>
-
+  
                     <script>
                         function Aufgabe19() { 
                                                 
                           if (Eintrag19.value=="82") {alert("Richtig"); document.getElementById("Pruef19").disabled= true;
                           }  
                            
-                          else if (Eintrag19.value!=="82" && Eintrag19.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag19").value="82";            
-                          document.getElementById("Loesung19").style.visibility="visible";document.getElementById("Pruef19").disabled= true;}                               
+                          else if (Eintrag19.value!=="82" && Eintrag19.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag19").value="82";window.open('Prozent_Aufgabe19.html')            
+                          document.getElementById("Pruef19").disabled= true;}                               
                           else if (Eintrag19.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
@@ -314,7 +308,7 @@ Empore                           5€          2,50€ </pre>
              
         <p class="Aufgabe" style="font-weight:bold" >Aufgabe 20</p>
         <p class="Aufgabe" style="font-weight:bold">In einer Klasse sind 16 Mädchen. Der Rest, 60%, sind Jungen.  <br>Wie viele Schüler sind in der Klasse?&nbsp; &nbsp;  
-        <button  onclick="window.open('https://www.matheaufgaben-loesen.de/Prozent/Proz_Aufgabe20.pdf');" >Lösung</button></p>
+        <button  onclick="window.open('Prozent_Aufgabe20.html')" >Lösung</button></p>
                   
            
 
@@ -333,7 +327,7 @@ Empore                           5€          2,50€ </pre>
                           if (Eintrag21.value=="530,62") {alert("Richtig"); document.getElementById("Pruef21").disabled= true;
                           }  
                            
-                          else if (Eintrag21.value!=="530,62" && Eintrag21.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag21").value="530,62";            
+                          else if (Eintrag21.value!=="530,62" && Eintrag21.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag21").value="530,62";            
                           document.getElementById("Loesung21").style.visibility="visible";document.getElementById("Pruef21").disabled= true;}                               
                           else if (Eintrag21.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -362,7 +356,7 @@ Empore                           5€          2,50€ </pre>
                           if (Eintrag23.value=="1514,1") {alert("Richtig"); document.getElementById("Pruef23").disabled= true;
                           }  
                            
-                          else if (Eintrag23.value!=="1514,1" && Eintrag23.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag23").value="1514,1";            
+                          else if (Eintrag23.value!=="1514,1" && Eintrag23.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag23").value="1514,1";            
                           document.getElementById("Loesung23").style.visibility="visible";document.getElementById("Pruef23").disabled= true;}                               
                           else if (Eintrag23.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -390,7 +384,7 @@ Empore                           5€          2,50€ </pre>
                           if (Eintrag25.value=="859,42") {alert("Richtig"); document.getElementById("Pruef25").disabled= true;
                           }  
                            
-                          else if (Eintrag25.value!=="859,42" && Eintrag25.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag25").value="859,42";            
+                          else if (Eintrag25.value!=="859,42" && Eintrag25.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag25").value="859,42";            
                           document.getElementById("Loesung25").style.visibility="visible";document.getElementById("Pruef25").disabled= true;}                               
                           else if (Eintrag25.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -416,7 +410,7 @@ Empore                           5€          2,50€ </pre>
                           if (Eintrag27.value=="180000") {alert("Richtig"); document.getElementById("Pruef27").disabled= true;
                           }  
                            
-                          else if (Eintrag27.value!=="180000" && Eintrag27.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag27").value="180000";            
+                          else if (Eintrag27.value!=="180000" && Eintrag27.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag27").value="180000";            
                           document.getElementById("Loesung27").style.visibility="visible";document.getElementById("Pruef27").disabled= true;}                               
                           else if (Eintrag27.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -443,7 +437,7 @@ Empore                           5€          2,50€ </pre>
                           if (Eintrag29.value=="290,4") {alert("Richtig"); document.getElementById("Pruef29").disabled= true;
                           }  
                            
-                          else if (Eintrag29.value!=="290,4" && Eintrag29.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag29").value="290,4";            
+                          else if (Eintrag29.value!=="290,4" && Eintrag29.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag29").value="290,4";            
                           document.getElementById("Loesung29").style.visibility="visible";document.getElementById("Pruef29").disabled= true;}                               
                           else if (Eintrag29.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -470,7 +464,7 @@ Empore                           5€          2,50€ </pre>
                           if (Eintrag31.value=="49,53") {alert("Richtig"); document.getElementById("Pruef31").disabled= true;
                           }  
                            
-                          else if (Eintrag31.value!=="49,53" && Eintrag31.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag31").value="49,53";            
+                          else if (Eintrag31.value!=="49,53" && Eintrag31.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag31").value="49,53";            
                           document.getElementById("Loesung31").style.visibility="visible";document.getElementById("Pruef31").disabled= true;}                               
                           else if (Eintrag31.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -498,7 +492,7 @@ Empore                           5€          2,50€ </pre>
                           if (Eintrag33.value=="0,32") {alert("Richtig"); document.getElementById("Pruef33").disabled= true;
                           }  
                            
-                          else if (Eintrag33.value!=="0,32" && Eintrag33.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag33").value="0,32";            
+                          else if (Eintrag33.value!=="0,32" && Eintrag33.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag33").value="0,32";            
                           document.getElementById("Loesung33").style.visibility="visible";document.getElementById("Pruef33").disabled= true;}                               
                           else if (Eintrag33.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -525,7 +519,7 @@ Empore                           5€          2,50€ </pre>
                           if (Eintrag35.value=="300") {alert("Richtig"); document.getElementById("Pruef35").disabled= true;
                           }  
                            
-                          else if (Eintrag35.value!=="300" && Eintrag35.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag35").value="300";            
+                          else if (Eintrag35.value!=="300" && Eintrag35.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag35").value="300";            
                           document.getElementById("Loesung35").style.visibility="visible";document.getElementById("Pruef35").disabled= true;}                               
                           else if (Eintrag35.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -554,7 +548,7 @@ Empore                           5€          2,50€ </pre>
                           if (Eintrag37.value=="13,33") {alert("Richtig"); document.getElementById("Pruef37").disabled= true;
                           }  
                            
-                          else if (Eintrag37.value!=="13,33" && Eintrag37.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag37").value="13,33";            
+                          else if (Eintrag37.value!=="13,33" && Eintrag37.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag37").value="13,33";            
                           document.getElementById("Loesung37").style.visibility="visible";document.getElementById("Pruef37").disabled= true;}                               
                           else if (Eintrag37.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -584,7 +578,7 @@ Empore                           5€          2,50€ </pre>
                           if (Eintrag39.value=="1800") {alert("Richtig"); document.getElementById("Pruef39").disabled= true;
                           }  
                            
-                          else if (Eintrag39.value!=="1800" && Eintrag39.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag39").value="1800";            
+                          else if (Eintrag39.value!=="1800" && Eintrag39.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag39").value="1800";            
                           document.getElementById("Loesung39").style.visibility="visible";document.getElementById("Pruef39").disabled= true;}                               
                           else if (Eintrag39.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -614,7 +608,7 @@ Empore                           5€          2,50€ </pre>
                           if (Eintrag41.value=="687,5") {alert("Richtig"); document.getElementById("Pruef41").disabled= true;
                           }  
                            
-                          else if (Eintrag41.value!=="687,5" && Eintrag41.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag41").value="687,5";            
+                          else if (Eintrag41.value!=="687,5" && Eintrag41.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag41").value="687,5";            
                           document.getElementById("Loesung41").style.visibility="visible";document.getElementById("Pruef41").disabled= true;}                               
                           else if (Eintrag41.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -648,7 +642,7 @@ Empore                           5€          2,50€ </pre>
                           if (Eintrag43.value=="363,20") {alert("Richtig"); document.getElementById("Pruef43").disabled= true;
                           }  
                            
-                          else if (Eintrag43.value!=="363,20" && Eintrag43.value!=="") {alert("Leider falsch. Das richtige Ergebnis und der Link zur Lösung werden angezeigt. "); document.getElementById("Eintrag43").value="363,20";            
+                          else if (Eintrag43.value!=="363,20" && Eintrag43.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag43").value="363,20";            
                           document.getElementById("Loesung43").style.visibility="visible";document.getElementById("Pruef43").disabled= true;}                               
                           else if (Eintrag43.value=="") {alert("Bitte eine Eingabe machen")}}
                          
