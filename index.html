@@ -13,27 +13,47 @@
     <style> 
         .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
-        
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
-        button {font-family: Verdana, Sans-serif; }
+         body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;} 
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;}  
+                
+                }
         input {background-color:yellow; }
     </style>
     
-	
+	<main>
+
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Prozentrechnung</p>
     <p class="Text2" > <span style= "background-color:white;">Sie sehen eine gelbes Eingabefeld oder <br>den Schalter: Lösung.</span></p>
   	<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
-    
+  
+  <div class="check">
+
   <!--//Aufgabe 1-->
 
-    <pre><b><p class ="Aufgabe" >Aufgabe 1
+    <h2>Aufgabe 1</h2>
 
-Ein Verein nimmt bei seinem Sommerfest 2540 € ein. 
+<p>Ein Verein nimmt bei seinem Sommerfest 2540 € ein. 
 Er muss davon 12% Vergnügungssteuer bezahlen.   
-Welcher Betrag verbleibt dem Verein?  
- <input type="text" id="Eintrag1" maxlength="7" size="3" style= background-color:yellow > €</input> <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p></pre>
+Welcher Betrag verbleibt dem Verein?</p>  
+
+ <input type="text" id="Eintrag1" maxlength="7" style= background-color:yellow > €</input> <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p>
   
   
                      <script>
@@ -51,20 +71,23 @@ Welcher Betrag verbleibt dem Verein?
 
      <!--//Aufgabe 2-->
 
-  <pre><p class="Aufgabe" >Aufgabe 2
+  <h2>Aufgabe 2</h2>
 
-Auf einer Rechnung steht: Schweinebraten 18,40 €, 
+<p>Auf einer Rechnung steht: Schweinebraten 18,40 €, 
 Brot 2,00 €, Getränk 2,40 €. 
 Wie viel muss der Gast bezahlen, wenn er 10% 
-Trinkgeld geben will?  <button  onclick="window.open('Prozent_Aufgabe2.html')" >Lösung</button></p></pre>
+Trinkgeld geben will?</p>
+
+  <button  onclick="window.open('Prozent_Aufgabe2.html')" >Lösung</button></p>
                
      <!--//Aufgabe 3--> 
 
-    <pre><p class ="Aufgabe" >Aufgabe 3
+    <h2>Aufgabe 3</h2>
 
-Von den 20 Schülern einer Klasse sind 3 krank. 
-Wie viel Prozent der Schüler sind das?
- <input type="text" id="Eintrag3" maxlength="2" size="1" style= background-color:yellow > %</input> <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button></p></pre>
+<p>Von den 20 Schülern einer Klasse sind 3 krank. 
+Wie viel Prozent der Schüler sind das?</p>
+
+ <input type="text" id="Eintrag3" maxlength="2" size="1" style= background-color:yellow > %</input> <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button></p>
   
   
                      <script>
@@ -82,21 +105,23 @@ Wie viel Prozent der Schüler sind das?
 
     <!--//Aufgabe 4-->
 
-  <pre><p class="Aufgabe" >Aufgabe 4
+  <h2>Aufgabe 4</h2>
 
-In einer Klasse sind 8 Mädchen, das sind 25% der 
+<p>In einer Klasse sind 8 Mädchen, das sind 25% der 
 Schüler. 
-Wie viele Schüler sind insgesamt in der Klasse? 
-<button  onclick="window.open('Prozent_Aufgabe4.html')" >Lösung</button></p></pre>
+Wie viele Schüler sind insgesamt in der Klasse?</p>
+ 
+<button  onclick="window.open('Prozent_Aufgabe4.html')" >Lösung</button></p>
   
           <!--//Aufgabe 5--> 
 
-      <pre><p class ="Aufgabe" >>Aufgabe 5
+      <h2>Aufgabe 5</h2>
 
-Ein Metzger gibt auf einen Fleischverkauf von 
+<p>Ein Metzger gibt auf einen Fleischverkauf von 
 138,50 € einen Rabatt von 8%. 
-Wie viel muss der Kunde bezahlen?  
- <input type="text" id="Eintrag5" maxlength="6" size="2" style= background-color:yellow ></input> € <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button></p></pre>
+Wie viel muss der Kunde bezahlen? </p>
+ 
+ <input type="text" id="Eintrag5" maxlength="6" size="2" style= background-color:yellow ></input> € <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button></p>
        
      <script>
                         function Aufgabe5() { 
@@ -113,23 +138,25 @@ Wie viel muss der Kunde bezahlen?
 
     <!--//Aufgabe 6-->
 
-  <pre><p class="Aufgabe" >Aufgabe 6
+  <h2>Aufgabe 6</h2>
 
-Nach einer Klassenarbeit gibt es folgende 
+<p>Nach einer Klassenarbeit gibt es folgende 
 Ergebnisse: 2 Schüler eine 1, 8 Schüler eine 2, 
 10 Schüler eine 3, 8 Schüler eine 4 und 
 4 Schüler eine 5.
-Wie viel Prozent haben mindestens eine 4 erreicht?  
-<button  onclick="window.open('Prozent_Aufgabe6.html')" >Lösung</button></p></pre>
+Wie viel Prozent haben mindestens eine 4 erreicht? </p>
+  
+<button  onclick="window.open('Prozent_Aufgabe6.html')" >Lösung</button></p>
       
    <!--//Aufgabe 7--> 
 
-  <pre><p class ="Aufgabe" >Aufgabe 7
+  <h2>Aufgabe 7</h2>
 
-Ein Korb Äpfel wiegt 10 kg. Das Korbgewicht 
+<p>Ein Korb Äpfel wiegt 10 kg. Das Korbgewicht 
 beträgt 5% des Gesamtgewichts. 
-Wie viel kg wiegen die Äpfel? 
-  <input type="text" id="Eintrag7" maxlength="3" size="1" style= background-color:yellow > kg</input> <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button></p></pre>
+Wie viel kg wiegen die Äpfel? </p>
+
+  <input type="text" id="Eintrag7" maxlength="3" size="1" style= background-color:yellow > kg</input> <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button></p>
     
                     <script>
                         function Aufgabe7() { 
@@ -146,21 +173,23 @@ Wie viel kg wiegen die Äpfel?
         
        <!--//Aufgabe 8-->   
              
-      <pre><p class="Aufgabe" >Aufgabe 8
+      <h2>Aufgabe 8</h2>
 
-Bei der Produktion von Schrauben entsteht 
+<p>Bei der Produktion von Schrauben entsteht 
 üblicherweise 1,5 % Ausschuss.Wie viel Schrauben 
-wurden produziert, wenn 147 unbrauchbar waren?  
-<button  onclick="window.open('Prozent_Aufgabe8.html')" >Lösung</button></p></pre>
+wurden produziert, wenn 147 unbrauchbar waren?  </p>
+
+<button  onclick="window.open('Prozent_Aufgabe8.html')" >Lösung</button></p>
 
  <!--//Aufgabe 9--> 
 
- <pre><p class ="Aufgabe" >Aufgabe 9
+ <h2>Aufgabe 9</h2>
 
-In einer Klasse sind 40 Schüler. 
+<p>In einer Klasse sind 40 Schüler. 
 Davon werden 38 versetzt. 
-Wie viel Prozent sind das?
- <input type="text" id="Eintrag9" maxlength="2" size="1" style= background-color:yellow > %</input> <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button></p></pre>
+Wie viel Prozent sind das?  </p>
+
+ <input type="text" id="Eintrag9" maxlength="2" size="1" style= background-color:yellow > %</input> <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button></p>
   
 <script>
                         function Aufgabe9() { 
@@ -177,21 +206,22 @@ Wie viel Prozent sind das?
 
         <!--//Aufgabe 10-->   
              
-<pre><p class="Aufgabe" >Aufgabe 10
+<h2>Aufgabe 9</h2>
 
-12,5 % einer Geldsumme entsprechen 11 €. 
-Wie hoch ist die Gesamtsumme?  
-<button  onclick="window.open('Prozent_Aufgabe10.html')" >Lösung</button></p></pre>
+<p>12,5 % einer Geldsumme entsprechen 11 €. 
+Wie hoch ist die Gesamtsumme?   </p>
+
+<button  onclick="window.open('Prozent_Aufgabe10.html')" >Lösung</button></p>
 
         <!--//Aufgabe 11-->
 
     <pre><p class ="Aufgabe" >Aufgabe 11
 
-In einem Wald stehen 3500 m³ Holz. 
+In einem Wald stehen 3500 m<sup>3</sup> Holz. 
 Jährlich kommen 2,5 % dazu.
-Wie viel m³ Holz können geschlagen werden, 
+Wie viel m<sup>3</sup> Holz können geschlagen werden, 
 wenn der Bestand erhalten bleiben soll?    
- <input type="text" id="Eintrag11" maxlength="4" size="1" style= background-color:yellow > €</input> <button id="Pruef11" onclick="Aufgabe11()">Prüfen</button></p></pre>
+ <input type="text" id="Eintrag11" maxlength="4" size="1" style= background-color:yellow > m<sup>3</sup></input> <button id="Pruef11" onclick="Aufgabe11()">Prüfen</button></p></pre>
   
                     <script>
                         function Aufgabe11() { 
@@ -283,10 +313,10 @@ Wie hoch war die alte Miete?
     <pre><p class ="Aufgabe" >Aufgabe 17
 
 Luft besteht zu 21 % aus Sauerstoff. 
-Wie viel m³ Sauerstoff befinden sich in einem Raum 
+Wie viel m<sup>3</sup> Sauerstoff befinden sich in einem Raum 
 mit einer Länge von 15 m, einer Breite von 10 m 
 und einer Höhe von 3 m?
- <input type="text" id="Eintrag17" maxlength="4" size="1" style= background-color:yellow > m³</input> <button id="Pruef17" onclick="Aufgabe17()">Prüfen</button></p></pre>
+ <input type="text" id="Eintrag17" maxlength="4" size="1" style= background-color:yellow > m<sup>3</sup></input> <button id="Pruef17" onclick="Aufgabe17()">Prüfen</button></p></pre>
   
                     <script>
                         function Aufgabe17() { 
@@ -374,8 +404,8 @@ bezahlen, wenn ihm die Werkstatt ein Skonto von
         <pre><p class="Aufgabe" >Aufgabe 22
 
 Nach langjähriger Beobachtung hat man 
-festgestellt, dass Jungen mit 12 Jahren 84 % ihrer 
-Endgröße erreicht haben. 
+festgestellt, dass Jungen mit 12 Jahren 84 % 
+ihrer Endgröße erreicht haben. 
 Ein 12-jähriger ist 158 cm groß.
 Wie groß wird er als Erwachsener werden? 
 <button  onclick="window.open('Prozent_Aufgabe22.html')" >Lösung</button></p></pre>
@@ -496,7 +526,7 @@ wegwerfen.Wie viel kg kann er noch verkaufen?
              
         <pre><p class="Aufgabe" >Aufgabe 30
 
-In Deutschland gibt es 136 000 km² Wald, das sind 
+In Deutschland gibt es 136 000 km<sup>2</sup> Wald, das sind 
 29 % der Gesamtfläche.
 Wie groß ist die Gesamtfläche Deutschlands?  
 <button  onclick="window.open('Prozent_Aufgabe30.html')" >Lösung</button></p></pre>
@@ -511,7 +541,7 @@ Für wie viel DM hat Deutschland 1962 Waren
 importiert? 
 Tragen Sie das Ergebnis auf 2 Stellen nach dem 
 Komma gerundet ein.
- <input type="text" id="Eintrag31" maxlength="5" size="2" style= background-color:yellow > DM</input> <button id="Pruef31" onclick="Aufgabe31()">Prüfen</button></p></pre>
+ <input type="text" id="Eintrag31" maxlength="5" size="2" style= background-color:yellow > Mrd</input> <button id="Pruef31" onclick="Aufgabe31()">Prüfen</button></p></pre>
   
                     <script>
                         function Aufgabe31() {                                                
@@ -714,7 +744,7 @@ Nach einem Schadensfall muss er 55 % bezahlen.
 Bis zu welcher Schadenshöhe lohnt es sich, den 
 Schaden selbst zu bezahlen,wenn er 1 Jahr 55 %, 
 2 Jahre 50 % und 3 Jahre 45 % bezahlen muss, 
-um wieder in den ursprünglichen Tarif zu kommen?   
+um wieder in den ursprünglichen Tarif zu kommen?
  <input type="text" id="Eintrag43" maxlength="6" size="2" style= background-color:yellow > Tage</input> <button id="Pruef43" onclick="Aufgabe43()">Prüfen</button></p></b></pre>
   
 
